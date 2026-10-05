@@ -50,7 +50,7 @@ def page(path, title, description, body, current):
 %(body)s
 </main>
 <footer class="site-footer"><div class="wrap">
-<span>&copy; 2026 TEK Digital Solutions. WorkTrail Recorder for iPhone.</span>
+<span>&copy; 2026 TEK Digital Solutions. WorkTrail Recorder for iPhone.<br><small>Apple, iPhone, Apple Intelligence, Apple Maps, Siri, iCloud and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</small></span>
 <nav aria-label="Footer">%(nav)s<a href="mailto:%(email)s">Contact</a></nav>
 </div></footer>
 </body>
@@ -67,7 +67,7 @@ def card(tag, title, text):
 
 HOME = '''
 <div class="hero"><div class="wrap">
-<span class="pill">FOR IPHONE</span>
+<span class="pill">for iPhone</span>
 <h1>Record your working day.<br>Read it back in writing.</h1>
 <p class="lead">WorkTrail Recorder keeps a spoken record of your day, marks the moments that matter, and turns speech into text on your iPhone. No account. No WorkTrail server.</p>
 <span class="cta" aria-disabled="true">Coming soon to the App Store</span>
@@ -87,7 +87,7 @@ HOME = '''
     card('JOURNAL', 'A work journal', 'Write notes against the day and set reminders tied to the places you work.'),
     card('AUTOMATE', 'Recording by place', 'When you arrive at, stay at, or leave a place you save, WorkTrail starts recording if it is open, or sends a notification you tap to start. Arm and disarm each place with a switch.'),
     card('BACK UP', 'Your folder, your copy', 'Back up sessions to a folder you pick in Files, check the copy against the original, and copy missing recordings back from it.'),
-    card('SUMMARIZE', 'On-device summaries', 'On iPhones with Apple Intelligence (iOS 26 or later), summarize the records you choose after reviewing exactly what will be used.'),
+    card('SUMMARIZE', 'On-device summaries', 'On iPhone models with Apple Intelligence (iOS 26 or later), summarize the records you choose after reviewing exactly what will be used.'),
     card('LOOK', 'Themes and density', 'Dark key-style themes including Hazy Black, and a display density setting that fits more on screen.'),
 ]) + '''
 </div>

@@ -92,3 +92,4 @@ details p { margin: 0 0 14px; }
   .hero { padding: 48px 0 40px; }
   section { padding: 40px 0; }
 }
+.site-footer small { display: block; margin-top: 6px; font-size: 12px; opacity: 0.8; max-width: 640px; }
