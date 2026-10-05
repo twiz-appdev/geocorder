@@ -69,7 +69,7 @@ HOME = '''
 <div class="hero"><div class="wrap">
 <span class="pill">FOR IPHONE</span>
 <h1>Record your working day.<br>Read it back in writing.</h1>
-<p class="lead">WorkTrail Recorder keeps a spoken record of your day, marks the moments that matter, and turns speech into text on your iPhone. No account. No cloud.</p>
+<p class="lead">WorkTrail Recorder keeps a spoken record of your day, marks the moments that matter, and turns speech into text on your iPhone. No account. No WorkTrail server.</p>
 <span class="cta" aria-disabled="true">Coming soon to the App Store</span>
 <span class="cta-note">WorkTrail Recorder is in final testing.</span>
 ''' + wave() + '''
@@ -77,18 +77,18 @@ HOME = '''
 
 <section id="features"><div class="wrap">
 <h2>Built for long days</h2>
-<p class="sub">Start it in the morning and let it run. Everything you need later is one tap away.</p>
+<p class="sub">Start it in the morning and let it run. Calls and other apps can pause a recording; WorkTrail picks it back up.</p>
 <div class="grid">
 ''' + ''.join([
     card('RECORD', 'All-day recording', 'Sessions split into clips on a schedule you choose and keep recording with the screen off or the phone in your pocket.'),
     card('MARK', 'Mark the moment', 'One tap marks what was just said. Save a clip, or save the last few minutes after something worth keeping.'),
-    card('TRANSCRIBE', 'Transcripts on the device', 'Speech becomes text on your iPhone. Quiet speech is brought up to a clear level first, and you get a cleaned copy next to the raw one.'),
+    card('TRANSCRIBE', 'Transcripts on the device', 'Speech becomes text on your iPhone with a built-in speech model; larger models are optional downloads. Quiet speech is brought up to a clear level first, and you get a cleaned copy next to the raw one.'),
     card('READ', 'Search, correct, share', 'Read along with the audio, search across transcripts, fix a passage, and share the text with or without the recording.'),
     card('JOURNAL', 'A work journal', 'Write notes against the day and set reminders tied to the places you work.'),
-    card('AUTOMATE', 'Recording by place', 'Start or stop recording when you arrive at, stay at, or leave a place you save. Arm and disarm each place with a switch.'),
-    card('BACK UP', 'Your folder, your copy', 'Back up sessions to a folder you pick in Files, verify the copy, and restore from it.'),
-    card('SUMMARIZE', 'On-device summaries', 'On iPhones with Apple Intelligence, summarize the records you choose after reviewing exactly what will be used.'),
-    card('LOOK', 'Themes and density', 'Graphite keys, a Hazy Black theme, and a display density setting that fits more on screen.'),
+    card('AUTOMATE', 'Recording by place', 'When you arrive at, stay at, or leave a place you save, WorkTrail starts recording if it is open, or sends a notification you tap to start. Arm and disarm each place with a switch.'),
+    card('BACK UP', 'Your folder, your copy', 'Back up sessions to a folder you pick in Files, check the copy against the original, and copy missing recordings back from it.'),
+    card('SUMMARIZE', 'On-device summaries', 'On iPhones with Apple Intelligence (iOS 26 or later), summarize the records you choose after reviewing exactly what will be used.'),
+    card('LOOK', 'Themes and density', 'Dark key-style themes including Hazy Black, and a display density setting that fits more on screen.'),
 ]) + '''
 </div>
 </div></section>
@@ -99,7 +99,7 @@ HOME = '''
 <div class="grid">
 ''' + ''.join([
     card('NO ACCOUNT', 'Nothing to sign in to', 'There is no WorkTrail account and no WorkTrail server. The app works without either.'),
-    card('ON DEVICE', 'Audio stays on your iPhone', 'Recordings and transcripts are stored on the device. Transcription runs on the device; your audio is not uploaded.'),
+    card('ON DEVICE', 'Audio is never uploaded by the app', 'Recordings and transcripts are stored on the device. Transcription runs on the device. Copies leave it only through your own backups or when you share them.'),
     card('NO TRACKING', 'No analytics, no ads', 'The app does not collect usage data, does not track you, and shows no advertising.'),
 ]) + '''
 </div>
@@ -114,12 +114,12 @@ HOME = '''
 
 FAQ = [
     ('Do I need an account?', 'No. There is nothing to sign in to. The app works as soon as you allow the microphone.'),
-    ('Does recording keep going when the screen is off?', 'Yes. Recording continues in the background, and a notification and Live Activity show that it is running. A phone call or another app taking over audio pauses it; WorkTrail resumes when the interruption ends or when you return to the app.'),
-    ('How do I get a transcript?', 'Open a recording and choose Transcript, then Transcribe. The first time, the app may ask to download a speech model. Transcription happens on your iPhone and can take a while for long recordings.'),
+    ('Does recording keep going when the screen is off?', 'Yes. Recording continues in the background, and a notification and Live Activity show that it is running. A phone call or another app taking over audio pauses it. WorkTrail tries to resume when the interruption ends; if it cannot, it shows a notification and resumes when you tap it or return to the app.'),
+    ('How do I get a transcript?', 'Open a recording, tap Speech, then Transcribe. A speech model is built in. Transcription happens on your iPhone and can take a while for long recordings.'),
     ('The transcript missed words. What can I do?', 'Choose a larger model under More, Settings, Transcription, Model / quality (Balanced or Accurate catch more than Fast), then run a new pass on the recording. Keeping the phone closer to the speaker helps the most.'),
-    ('Where are my recordings stored?', 'On your iPhone, inside the app. To keep a copy elsewhere, use Backup and choose a folder in Files, such as iCloud Drive.'),
-    ('How does recording by place work?', 'In Automation, save a place, choose when recording should start or stop, and arm it. The app asks for Always location access at that point so it can notice arrivals while closed. iPhone watches up to 20 armed places at once.'),
-    ('How do I delete everything?', 'More, Settings, Backup + Reset, Clean-install reset erases everything the app stored on the iPhone. Deleting the app does the same.'),
+    ('Where are my recordings stored?', 'On your iPhone, inside the app. They are included in your iPhone backup (iCloud Backup or a computer backup) if you use one. To keep a separate copy, use Backup and choose a folder in Files, such as iCloud Drive.'),
+    ('How does recording by place work?', 'In Automation, save a place, choose whether arriving, staying or leaving should start a recording, and arm it. The app asks for Always location access so it can notice this while closed. If WorkTrail is open the recording starts; otherwise you get a notification with a Start Recording button, because iPhone does not let apps switch the microphone on in the background. iPhone watches up to 20 armed places at once.'),
+    ('How do I delete everything?', 'More, Settings, Backup + Reset, Open backup + reset center, Prepare clean-install reset (you type a confirmation phrase) erases the recordings, transcripts, journal, places and settings the app stored on the iPhone. Deleting the app does the same. Copies in your backup folder, in an iPhone or iCloud backup, or that you shared are not removed.'),
     ('Can it record phone calls?', 'No. iPhone does not allow apps to record calls, and WorkTrail Recorder does not try to.'),
 ]
 
@@ -143,22 +143,24 @@ PRIVACY = '''
 <p>WorkTrail Recorder is published by TEK Digital Solutions ("we"). This policy explains what the app does with your information. The short version: the app has no account and no server of ours, and we do not collect your recordings, transcripts, location or usage data.</p>
 
 <h2>Information we collect</h2>
-<p>None. The app does not send us your recordings, transcripts, journal entries, saved places, location, contacts, identifiers or analytics. It contains no advertising and no tracking.</p>
+<p>None through the app. The app does not send us your recordings, transcripts, journal entries, saved places, location, contacts, identifiers or analytics. It contains no advertising and no tracking.</p>
+<p>If you email us, we receive your email address and whatever you send, including any diagnostics report you attach. That report can include the names of saved places and of your microphone or headset, but no audio or transcript text. We use it only to answer you.</p>
 
 <h2>Information stored on your iPhone</h2>
 <ul>
 <li><strong>Recordings and transcripts.</strong> Audio you record, the transcripts made from it, marks, clips and summaries are stored in the app's private storage on your iPhone.</li>
 <li><strong>Journal entries and saved places.</strong> Notes you write and the places you save for reminders and recording rules.</li>
-<li><strong>Location.</strong> If you allow it, the app uses your location on the device to tag recordings, centre the map, and notice when you arrive at or leave a place you armed. "Always" access is requested only when you arm a place. Location is not sent to us.</li>
+<li><strong>Location.</strong> If you allow it, the app uses your location on the device to tag recordings, centre the map, and notice when you arrive at or leave a place you armed. "Always" access is requested only when you turn on a place-based feature or ask for it in Setup. Location is not sent to us. Location tags are saved with a recording, so backed-up and exported session files include them.</li>
+<li><strong>Lock Screen.</strong> Reminders and the recording indicator can show titles, place names and note previews on the Lock Screen.</li>
 <li><strong>Settings.</strong> Your preferences, theme and display density.</li>
 </ul>
-<p>This information leaves your iPhone only when you choose to share it, export it, or back it up to a folder you select in Files (for example iCloud Drive or another provider you use). Those providers handle the copy under their own terms.</p>
+<p>This information leaves your iPhone only when you share it, export it, back it up to a folder you select in Files (for example iCloud Drive or another provider you use), or when your iPhone's own backup (iCloud Backup or a computer backup, if you use one) includes the app's data. Those providers handle the copy under their own terms.</p>
 
 <h2>Connections the app makes</h2>
-<p>The app works offline for recording and transcription. It connects to the internet only for these features:</p>
+<p>The app works offline for recording and transcription. It connects to the internet for these features:</p>
 <ul>
 <li><strong>Map tiles.</strong> The Automation map loads map images for the area you look at from OpenStreetMap (tile.openstreetmap.org) and, for satellite views, the U.S. Geological Survey (basemap.nationalmap.gov). Those services receive your IP address and which map tiles were requested.</li>
-<li><strong>Address search.</strong> Searching for an address uses Apple Maps, which receives the text you type.</li>
+<li><strong>Address search and address lookup.</strong> Searching for a place, the suggestions shown while you type, and looking up the address of a pin or of your current position use Apple Maps. Apple receives the text you type, the map area or position being searched near, and the coordinates being looked up. "Open in Maps" hands a recording's coordinates to the Maps app when you tap it.</li>
 <li><strong>Speech models.</strong> If you choose a larger transcription model, it is downloaded from huggingface.co, which receives your IP address. Your audio is never part of that request.</li>
 <li><strong>Summaries.</strong> Optional summaries run on Apple's on-device model on supported iPhones.</li>
 </ul>
@@ -171,7 +173,7 @@ PRIVACY = '''
 <p>The app is not directed to children under 13 and we do not knowingly collect information from anyone.</p>
 
 <h2>Deleting your information</h2>
-<p>Deleting a recording in the app removes it from the iPhone. More, Settings, Backup + Reset, Clean-install reset erases everything the app stored. Deleting the app does the same. Copies you exported or backed up elsewhere are yours to remove.</p>
+<p>Deleting a recording in the app removes it from the iPhone. The clean-install reset under More, Settings, Backup + Reset erases the recordings, transcripts, journal, places and settings the app stored. Deleting the app does the same. Copies in your backup folder, in an iPhone or iCloud backup, or that you shared or exported are not removed by the app and are yours to remove.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the app begins handling information differently, this page will be updated and the date above will change.</p>
@@ -186,10 +188,10 @@ TERMS = '''
 <h1>Terms of Use</h1>
 <p class="meta">WorkTrail Recorder for iPhone &middot; Last updated %(updated)s</p>
 
-<p>These terms apply to your use of WorkTrail Recorder (the "app"), published by TEK Digital Solutions ("we"). By using the app you agree to them. If you obtained the app from the Apple App Store, Apple's Licensed Application End User License Agreement also applies; where the two differ on a point Apple's agreement requires, Apple's agreement governs.</p>
+<p>WorkTrail Recorder (the "app") is published by TEK Digital Solutions ("we"). The licence for the app is Apple's Licensed Application End User License Agreement (the standard App Store licence). These terms add to it; they are between you and us, not Apple. Where these terms and Apple's licence differ, Apple's licence governs. By using the app you agree to both.</p>
 
 <h2>Licence</h2>
-<p>We grant you a personal, non-transferable licence to use the app on Apple devices you own or control, as permitted by the App Store's usage rules. You may not resell the app, or use it to break the law.</p>
+<p>Your licence to use the app is the one in Apple's standard licence: personal, non-transferable use on Apple devices you own or control, as permitted by the App Store's usage rules. You may not resell the app, or use it to break the law.</p>
 
 <h2>Your recordings and your responsibility</h2>
 <ul>
@@ -202,19 +204,22 @@ TERMS = '''
 <p>Transcripts and summaries are produced automatically and can contain errors, omissions or words that were not said. Check them against the audio before relying on them. They are not a substitute for professional, legal, medical or safety records.</p>
 
 <h2>Keeping your recordings safe</h2>
-<p>Recordings are stored only on your iPhone unless you back them up. A recording can be lost if the device fails, runs out of storage, is reset, or the app is deleted, and a recording can be interrupted by calls, other apps or the system. Keep backups of anything you cannot afford to lose.</p>
+<p>Recordings are stored on your iPhone; the only other copies are the ones in your own backups. A recording can be lost if the device fails, runs out of storage, is reset, or the app is deleted, and a recording can be interrupted by calls, other apps or the system. Keep backups of anything you cannot afford to lose.</p>
 
 <h2>Third-party services</h2>
-<p>Map images, address search and optional model downloads are provided by others, as described in the <a href="../privacy/">privacy policy</a>. Their availability is outside our control. Open-source components used by the app are credited in the app.</p>
+<p>Map images, address search and optional model downloads are provided by others, as described in the <a href="../privacy/">privacy policy</a>. Their availability is outside our control. Open-source components used by the app are listed, with their licences, under More, About in the app.</p>
 
 <h2>No warranty</h2>
 <p>The app is provided "as is" and "as available", without warranties of any kind, to the fullest extent the law allows. We do not warrant that the app will be uninterrupted, error-free, or that any recording or transcript will be complete or accurate.</p>
 
+<h2>Support</h2>
+<p>We, not Apple, are responsible for the app and for supporting it. Contact us at the address below.</p>
+
 <h2>Limitation of liability</h2>
-<p>To the fullest extent the law allows, we are not liable for indirect, incidental, special or consequential damages, for lost data or recordings, or for claims arising from what you record or how you use it. Our total liability for any claim relating to the app is limited to the amount you paid for it.</p>
+<p>To the fullest extent the law allows, we are not liable for indirect, incidental, special or consequential damages, for lost data or recordings, or for claims arising from what you record or how you use it. Our total liability for any claim relating to the app is limited to the amount you paid for it, or the limit in Apple's licence if that is different. Nothing here removes rights you have under consumer law that cannot be excluded.</p>
 
 <h2>Changes</h2>
-<p>We may update the app and these terms. The date above shows the latest version. Continuing to use the app after a change means you accept the updated terms.</p>
+<p>We may update the app and these terms. The date above shows the latest version, and this page always holds the current terms.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:%(email)s">%(email)s</a></p>
@@ -222,7 +227,7 @@ TERMS = '''
 ''' % dict(email=EMAIL, updated=UPDATED)
 
 page('index.html', 'WorkTrail Recorder — record, mark and transcribe on iPhone',
-     'WorkTrail Recorder keeps a spoken record of your working day and transcribes it on your iPhone. No account, no cloud.', HOME, 'home')
+     'WorkTrail Recorder keeps a spoken record of your working day and transcribes it on your iPhone. No account, no WorkTrail server.', HOME, 'home')
 page('support/index.html', 'Support — WorkTrail Recorder', 'Help and contact for WorkTrail Recorder for iPhone.', SUPPORT, 'support')
 page('privacy/index.html', 'Privacy Policy — WorkTrail Recorder', 'What WorkTrail Recorder does with your information: nothing is collected.', PRIVACY, 'privacy')
 page('terms/index.html', 'Terms of Use — WorkTrail Recorder', 'Terms of use for WorkTrail Recorder for iPhone.', TERMS, 'terms')
