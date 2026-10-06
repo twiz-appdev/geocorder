@@ -50,7 +50,7 @@ def page(path, title, description, body, current):
 %(body)s
 </main>
 <footer class="site-footer"><div class="wrap">
-<span>&copy; 2026 TEK Digital Solutions. GeoCorder for iPhone.<br><small>Apple, iPhone, Apple Intelligence, Apple Maps, Siri, iCloud and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</small></span>
+<span>&copy; 2026 John Gunderson, d/b/a TEK Digital Solutions. GeoCorder for iPhone.<br><small>Apple, iPhone, Apple Intelligence, Apple Maps, Siri, iCloud and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</small></span>
 <nav aria-label="Footer">%(nav)s<a href="mailto:%(email)s">Contact</a></nav>
 </div></footer>
 </body>
@@ -133,7 +133,7 @@ PRIVACY = '''
 <h1>Privacy Policy</h1>
 <p class="meta">GeoCorder for iPhone &middot; Last updated %(updated)s</p>
 
-<p>GeoCorder is published by TEK Digital Solutions ("we"). The short version: there is no account and no server of ours. Your recordings, transcripts, journal, places and location stay on your iPhone, and the app sends us nothing.</p>
+<p>GeoCorder is published by John Gunderson, doing business as TEK Digital Solutions ("we"). The short version: there is no account and no server of ours. Your recordings, transcripts, journal, places and location stay on your iPhone, and the app sends us nothing.</p>
 
 <h2>What stays on your iPhone</h2>
 <p>Recordings, transcripts, marks, summaries, journal entries, saved places, an activity history and your settings are stored in the app on your iPhone. Transcription and summaries run on the iPhone. If you allow location, recordings and marked moments are tagged with where they were made (you can turn this off), and places you arm can start a recording or a reminder. Reminders and the recording indicator can show titles and place names on the Lock Screen.</p>
@@ -168,7 +168,7 @@ TERMS = '''
 <h1>Terms of Use</h1>
 <p class="meta">GeoCorder for iPhone &middot; Last updated %(updated)s</p>
 
-<p>GeoCorder (the "app") is published by TEK Digital Solutions ("we", "us"). The licence for the app is Apple's Licensed Application End User License Agreement (the standard App Store licence). These terms add to it; they are between you and us, not Apple. Where these terms and Apple's licence differ, Apple's licence governs. By downloading or using the app you agree to both.</p>
+<p>GeoCorder (the "app") is published by John Gunderson, doing business as TEK Digital Solutions ("we", "us"). The licence for the app is Apple's Licensed Application End User License Agreement (the standard App Store licence). These terms add to it; they are between you and us, not Apple. Where these terms and Apple's licence differ, Apple's licence governs. By downloading or using the app you agree to both.</p>
 
 <h2>Licence</h2>
 <p>Your licence to use the app is the one in Apple's standard licence: personal, non-transferable use on Apple devices you own or control, as permitted by the App Store's usage rules. You may not resell the app, or use it to break the law.</p>
@@ -200,6 +200,9 @@ TERMS = '''
 
 <h2>Apple</h2>
 <p>Apple is not responsible for the app or its content and has no obligation to provide maintenance or support for it. If the app fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price; to the maximum extent the law allows, Apple has no other warranty obligation for the app. We, not Apple, are responsible for addressing any claims relating to the app, including product liability claims, claims that the app fails to meet legal or regulatory requirements, consumer-protection or privacy claims, and claims that the app infringes someone else's intellectual property. You confirm that you are not located in a country subject to a US Government embargo or designated by the US Government as a "terrorist supporting" country, and that you are not on any US Government list of prohibited or restricted parties. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them against you.</p>
+
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of the State of Wisconsin, USA. Any dispute we cannot settle informally will be heard in the state or federal courts for Polk County, Wisconsin, except that either of us may bring an individual claim in small-claims court. If you live outside the United States, you keep any protection your local law gives you that cannot be waived.</p>
 
 <h2>Changes</h2>
 <p>We may update the app and these terms. Updated terms apply from the date shown above and only to use of the app after that date; they do not apply to a dispute that arose before they were posted. If you do not agree to updated terms, stop using the app. If any part of these terms is found unenforceable, the rest remains in effect.</p>
