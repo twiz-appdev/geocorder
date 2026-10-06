@@ -1,4 +1,4 @@
-"""Builds the WorkTrail Recorder site: python build.py writes the four pages next to this file."""
+"""Builds the GeoCorder site: python build.py writes the four pages next to this file."""
 import pathlib
 
 ROOT = pathlib.Path(__file__).parent
@@ -43,14 +43,14 @@ def page(path, title, description, body, current):
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="%(home)s">%(mark)s<span>WORKTRAIL RECORDER</span></a>
+<a class="brand" href="%(home)s">%(mark)s<span>GEOCORDER</span></a>
 <nav class="nav" aria-label="Site">%(nav)s</nav>
 </div></header>
 <main>
 %(body)s
 </main>
 <footer class="site-footer"><div class="wrap">
-<span>&copy; 2026 TEK Digital Solutions. WorkTrail Recorder for iPhone.<br><small>Apple, iPhone, Apple Intelligence, Apple Maps, Siri, iCloud and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</small></span>
+<span>&copy; 2026 TEK Digital Solutions. GeoCorder for iPhone.<br><small>Apple, iPhone, Apple Intelligence, Apple Maps, Siri, iCloud and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</small></span>
 <nav aria-label="Footer">%(nav)s<a href="mailto:%(email)s">Contact</a></nav>
 </div></footer>
 </body>
@@ -68,23 +68,23 @@ def card(tag, title, text):
 HOME = '''
 <div class="hero"><div class="wrap">
 <span class="pill">for iPhone</span>
-<h1>Record your working day.<br>Read it back in writing.</h1>
-<p class="lead">WorkTrail Recorder keeps a spoken record of your day, marks the moments that matter, and turns speech into text on your iPhone. No account. No WorkTrail server.</p>
+<h1>Automate. Record.<br>Transcribe.</h1>
+<p class="lead">GeoCorder keeps a spoken record of your day, marks the moments that matter, and turns speech into text on your iPhone. No account. No GeoCorder server.</p>
 <span class="cta" aria-disabled="true">Coming soon to the App Store</span>
-<span class="cta-note">WorkTrail Recorder is in final testing.</span>
+<span class="cta-note">GeoCorder is in final testing.</span>
 ''' + wave() + '''
 </div></div>
 
 <section id="features"><div class="wrap">
 <h2>Built for long days</h2>
-<p class="sub">Start it when your work begins and stop it when you are done. A call or another app can pause a recording; WorkTrail tries to pick it back up and tells you if it cannot.</p>
+<p class="sub">Start it when your work begins and stop it when you are done. A call or another app can pause a recording; GeoCorder tries to pick it back up and tells you if it cannot.</p>
 <div class="grid">
 ''' + ''.join([
-    card('RECORD', 'All-day recording', 'Sessions split into clips on a schedule you choose and keep recording with the screen off. A notification and Live Activity show whenever WorkTrail is recording.'),
+    card('RECORD', 'All-day recording', 'Sessions split into clips on a schedule you choose and keep recording with the screen off. A notification and Live Activity show whenever GeoCorder is recording.'),
     card('MARK', 'Mark the moment', 'One tap marks what was just said. Save a clip, or save the last few minutes after something worth keeping.'),
     card('TRANSCRIBE', 'Transcripts on the device', 'Speech becomes text on your iPhone with a built-in speech model; larger models are optional downloads. Quiet speech is brought up to a clear level first, and you get a cleaned copy next to the raw one.'),
     card('READ', 'Search, correct, share', 'Read along with the audio, search across transcripts, fix a passage, and share the text with or without the recording.'),
-    card('AUTOMATE', 'Recording by place', 'When you arrive at, stay at, or leave a place you save, WorkTrail starts recording if it is open, or sends a notification you tap to start. Arm and disarm each place with a switch.'),
+    card('AUTOMATE', 'Recording by place', 'When you arrive at, stay at, or leave a place you save, GeoCorder starts recording if it is open, or sends a notification you tap to start. Arm and disarm each place with a switch.'),
     card('ROUTINES', 'Routines for your places', 'Reminders when you arrive, leave or stay a while, with Done, Snooze and quick-note buttons, plus a log of your time at each place. Start from a ready-made example or build your own.'),
 ]) + '''
 </div>
@@ -95,7 +95,7 @@ HOME = '''
 <p class="sub">A recorder hears everything, so it should keep it to itself.</p>
 <div class="grid">
 ''' + ''.join([
-    card('NO ACCOUNT', 'Nothing to sign in to', 'There is no WorkTrail account and no WorkTrail server. The app works without either.'),
+    card('NO ACCOUNT', 'Nothing to sign in to', 'There is no GeoCorder account and no GeoCorder server. The app works without either.'),
     card('ON DEVICE', 'Audio is never uploaded by the app', 'Recordings and transcripts are stored on the device. Transcription runs on the device. Copies leave it only through backups you set up, including a cloud folder you choose, or when you share them.'),
     card('NO TRACKING', 'No analytics, no ads', 'The app does not collect usage data, does not track you, and shows no advertising.'),
 ]) + '''
@@ -107,19 +107,19 @@ HOME = '''
 
 FAQ = [
     ('Do I need an account?', 'No. There is nothing to sign in to. The app works as soon as you allow the microphone.'),
-    ('Does recording keep going when the screen is off?', 'Yes. Recording continues in the background, and a notification and Live Activity show that it is running. A phone call or another app taking over audio pauses it. WorkTrail tries to resume when the interruption ends; if it cannot, it shows a notification and resumes when you tap it or return to the app.'),
+    ('Does recording keep going when the screen is off?', 'Yes. Recording continues in the background, and a notification and Live Activity show that it is running. A phone call or another app taking over audio pauses it. GeoCorder tries to resume when the interruption ends; if it cannot, it shows a notification and resumes when you tap it or return to the app.'),
     ('How do I get a transcript?', 'Open a recording, tap Speech, then Transcribe. A speech model is built in. Transcription happens on your iPhone and can take a while for long recordings.'),
     ('The transcript missed words. What can I do?', 'Choose a larger model under More, Settings, Transcription, Model / quality (Balanced or Accurate catch more than Fast), then run a new pass on the recording. Keeping the phone closer to the speaker helps the most.'),
     ('Where are my recordings stored?', 'On your iPhone, inside the app. They are included in your iPhone backup (iCloud Backup or a computer backup) if you use one. To keep a separate copy, use Backup and choose a folder in Files, such as iCloud Drive.'),
-    ('How does recording by place work?', 'In Automation, save a place, choose whether arriving, staying or leaving should start a recording, and arm it. The app asks for Always location access so it can notice this while closed. If WorkTrail is open the recording starts; otherwise you get a notification with a Start Recording button, because iPhone does not let apps switch the microphone on in the background. iPhone watches up to 20 armed places at once.'),
+    ('How does recording by place work?', 'In Automation, save a place, choose whether arriving, staying or leaving should start a recording, and arm it. The app asks for Always location access so it can notice this while closed. If GeoCorder is open the recording starts; otherwise you get a notification with a Start Recording button, because iPhone does not let apps switch the microphone on in the background. iPhone watches up to 20 armed places at once.'),
     ('How do I delete everything?', 'More, Settings, Backup + Reset, Open backup + reset center, Prepare clean-install reset (you type a confirmation phrase) erases the recordings, transcripts, journal, places and settings the app stored on the iPhone. Deleting the app does the same. Copies in your backup folder, in an iPhone or iCloud backup, or that you shared are not removed.'),
-    ('Can it record phone calls?', 'No. iPhone does not allow apps to record calls, and WorkTrail Recorder does not try to.'),
+    ('Can it record phone calls?', 'No. iPhone does not allow apps to record calls, and GeoCorder does not try to.'),
 ]
 
 SUPPORT = '''
 <div class="doc"><div class="wrap">
 <h1>Support</h1>
-<p class="meta">Help with WorkTrail Recorder for iPhone.</p>
+<p class="meta">Help with GeoCorder for iPhone.</p>
 <div class="note"><p>Email <a href="mailto:%(email)s">%(email)s</a>. Include your iPhone model, iOS version and the app version shown under More, About. Please do not send recordings or transcripts; they can contain other people's voices and words. The Diagnostics reports are enough in almost every case.</p></div>
 <h2>Common questions</h2>
 %(faq)s
@@ -131,9 +131,9 @@ SUPPORT = '''
 PRIVACY = '''
 <div class="doc"><div class="wrap">
 <h1>Privacy Policy</h1>
-<p class="meta">WorkTrail Recorder for iPhone &middot; Last updated %(updated)s</p>
+<p class="meta">GeoCorder for iPhone &middot; Last updated %(updated)s</p>
 
-<p>WorkTrail Recorder is published by TEK Digital Solutions ("we"). The short version: there is no account and no server of ours. Your recordings, transcripts, journal, places and location stay on your iPhone, and the app sends us nothing.</p>
+<p>GeoCorder is published by TEK Digital Solutions ("we"). The short version: there is no account and no server of ours. Your recordings, transcripts, journal, places and location stay on your iPhone, and the app sends us nothing.</p>
 
 <h2>What stays on your iPhone</h2>
 <p>Recordings, transcripts, marks, summaries, journal entries, saved places, an activity history and your settings are stored in the app on your iPhone. Transcription and summaries run on the iPhone. If you allow location, recordings and marked moments are tagged with where they were made (you can turn this off), and places you arm can start a recording or a reminder. Reminders and the recording indicator can show titles and place names on the Lock Screen.</p>
@@ -166,9 +166,9 @@ PRIVACY = '''
 TERMS = '''
 <div class="doc"><div class="wrap">
 <h1>Terms of Use</h1>
-<p class="meta">WorkTrail Recorder for iPhone &middot; Last updated %(updated)s</p>
+<p class="meta">GeoCorder for iPhone &middot; Last updated %(updated)s</p>
 
-<p>WorkTrail Recorder (the "app") is published by TEK Digital Solutions ("we", "us"). The licence for the app is Apple's Licensed Application End User License Agreement (the standard App Store licence). These terms add to it; they are between you and us, not Apple. Where these terms and Apple's licence differ, Apple's licence governs. By downloading or using the app you agree to both.</p>
+<p>GeoCorder (the "app") is published by TEK Digital Solutions ("we", "us"). The licence for the app is Apple's Licensed Application End User License Agreement (the standard App Store licence). These terms add to it; they are between you and us, not Apple. Where these terms and Apple's licence differ, Apple's licence governs. By downloading or using the app you agree to both.</p>
 
 <h2>Licence</h2>
 <p>Your licence to use the app is the one in Apple's standard licence: personal, non-transferable use on Apple devices you own or control, as permitted by the App Store's usage rules. You may not resell the app, or use it to break the law.</p>
@@ -209,11 +209,11 @@ TERMS = '''
 </div></div>
 ''' % dict(email=EMAIL, updated=UPDATED)
 
-page('index.html', 'WorkTrail Recorder — record, mark and transcribe on iPhone',
-     'WorkTrail Recorder keeps a spoken record of your working day and transcribes it on your iPhone. No account, no WorkTrail server.', HOME, 'home')
-page('support/index.html', 'Support — WorkTrail Recorder', 'Help and contact for WorkTrail Recorder for iPhone.', SUPPORT, 'support')
-page('privacy/index.html', 'Privacy Policy — WorkTrail Recorder', 'What WorkTrail Recorder does with your information: the app sends nothing to us, and recordings stay on your iPhone.', PRIVACY, 'privacy')
-page('terms/index.html', 'Terms of Use — WorkTrail Recorder', 'Terms of use for WorkTrail Recorder for iPhone.', TERMS, 'terms')
+page('index.html', 'GeoCorder — record, mark and transcribe on iPhone',
+     'GeoCorder keeps a spoken record of your working day and transcribes it on your iPhone. No account, no GeoCorder server.', HOME, 'home')
+page('support/index.html', 'Support — GeoCorder', 'Help and contact for GeoCorder for iPhone.', SUPPORT, 'support')
+page('privacy/index.html', 'Privacy Policy — GeoCorder', 'What GeoCorder does with your information: the app sends nothing to us, and recordings stay on your iPhone.', PRIVACY, 'privacy')
+page('terms/index.html', 'Terms of Use — GeoCorder', 'Terms of use for GeoCorder for iPhone.', TERMS, 'terms')
 (ROOT / 'icon.svg').write_text(MARK.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" '), encoding='utf-8', newline='\n')
 (ROOT / '.nojekyll').write_text('', encoding='utf-8')
 print('built')
