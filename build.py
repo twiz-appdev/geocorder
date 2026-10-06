@@ -84,11 +84,8 @@ HOME = '''
     card('MARK', 'Mark the moment', 'One tap marks what was just said. Save a clip, or save the last few minutes after something worth keeping.'),
     card('TRANSCRIBE', 'Transcripts on the device', 'Speech becomes text on your iPhone with a built-in speech model; larger models are optional downloads. Quiet speech is brought up to a clear level first, and you get a cleaned copy next to the raw one.'),
     card('READ', 'Search, correct, share', 'Read along with the audio, search across transcripts, fix a passage, and share the text with or without the recording.'),
-    card('JOURNAL', 'A work journal', 'Write notes against the day and set reminders tied to the places you work.'),
     card('AUTOMATE', 'Recording by place', 'When you arrive at, stay at, or leave a place you save, WorkTrail starts recording if it is open, or sends a notification you tap to start. Arm and disarm each place with a switch.'),
-    card('BACK UP', 'Your folder, your copy', 'Back up sessions to a folder you pick in Files, check the copy against the original, and copy missing recordings back from it.'),
-    card('SUMMARIZE', 'On-device summaries', 'On iPhone models with Apple Intelligence (iOS 26 or later), summarize the records you choose after reviewing exactly what will be used.'),
-    card('LOOK', 'Themes and density', 'Dark key-style themes including Hazy Black, and a display density setting that fits more on screen.'),
+    card('ROUTINES', 'Routines for your places', 'Reminders when you arrive, leave or stay a while, with Done, Snooze and quick-note buttons, plus a log of your time at each place. Start from a ready-made example or build your own.'),
 ]) + '''
 </div>
 </div></section>
