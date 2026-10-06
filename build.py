@@ -39,11 +39,12 @@ def page(path, title, description, body, current):
 <meta name="description" content="%(description)s">
 <meta name="theme-color" content="#0a0f15">
 <link rel="stylesheet" href="%(depth)sstyles.css">
-<link rel="icon" href="%(depth)sicon.svg" type="image/svg+xml">
+<link rel="icon" href="%(depth)sicon.png" type="image/png">
+<link rel="apple-touch-icon" href="%(depth)sicon.png">
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="%(home)s">%(mark)s<span>GEOCORDER</span></a>
+<a class="brand" href="%(home)s"><img src="%(depth)sicon.png" alt="" width="30" height="30" style="border-radius:7px"><span>GEOCORDER</span></a>
 <nav class="nav" aria-label="Site">%(nav)s</nav>
 </div></header>
 <main>
